@@ -1,0 +1,14 @@
+module.exports = Object.freeze({
+	UNKNOWN: -1,
+	KNIFE: 0,
+	PISTOL: 1,
+	SUBMACHINEGUN: 2,
+	RIFLE: 3,
+	SHOTGUN: 4,
+	SNIPER_RIFLE: 5,
+	MACHINEGUN: 6,
+	C4: 7,
+	TASER: 8,
+	GRENADE: 9,
+	HEALTHSHOT: 11
+});
