@@ -1,6 +1,9 @@
 # CS:GO Demo Reader for Node.js
 A library for reading CS:GO demo files.
 
+## Note
+This is a rewrited/modified version of [JSGO](https://github.com/mikeemoo/jsgo) originally created by @mikeemoo.
+
 ## Examples
 ```javascript
 const DemoReader = require('csgodemoreader').Reader;
