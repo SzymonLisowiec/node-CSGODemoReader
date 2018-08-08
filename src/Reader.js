@@ -46,7 +46,7 @@ class Demo extends EventEmitter {
 
 		this.running = 2;
 
-		let demo_header ={
+		let demo_header = {
 			'filestamp': this.stream.string(8),
 			'demo_protocol': this.stream.int32(),
 			'network_protocol': this.stream.int32(),
@@ -64,6 +64,7 @@ class Demo extends EventEmitter {
 
 			let command = this.stream.byte();
 			let tick = this.stream.int32();
+			this.tick = tick;
 			
 			if(command != Commands.PACKET){
 				this.tick = 0;

@@ -2,7 +2,15 @@
 	"name": "csgodemoreader",
 	"version": "1.0.0",
 	"description": "Library to reading demo files of Counter-Strike: Global Offensive",
-	"keywords": ["csgo", "demo", "file", "reader", "match", "counter", "strike"],
+	"keywords": [
+		"csgo",
+		"demo",
+		"file",
+		"reader",
+		"match",
+		"counter",
+		"strike"
+	],
 	"main": "index.js",
 	"author": "Szymon Lisowiec",
 	"license": "MIT"
