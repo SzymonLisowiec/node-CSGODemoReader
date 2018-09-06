@@ -169,6 +169,7 @@ csgo.instructor_server_hint_stop
 csgo.read_game_titledata
 csgo.write_game_titledata
 csgo.reset_game_titledata
+csgo.weaponhud_selection
 csgo.vote_ended
 csgo.vote_started
 csgo.vote_changed
