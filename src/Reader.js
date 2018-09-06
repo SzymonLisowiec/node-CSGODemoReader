@@ -644,7 +644,12 @@ class Demo extends EventEmitter {
 					break;
 
 				case 'round_start':
+					
 					this.match.round++;
+
+					if(this.match.round === 0)
+						this.match.round++;
+
 					break;
 
 			}
