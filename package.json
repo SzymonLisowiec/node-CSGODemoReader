@@ -1,6 +1,6 @@
 {
 	"name": "csgodemoreader",
-	"version": "1.0.2",
+	"version": "1.0.21",
 	"description": "Library to reading demo files of Counter-Strike: Global Offensive",
 	"keywords": [
 		"csgo",
@@ -12,6 +12,17 @@
 		"strike"
 	],
 	"main": "index.js",
-	"author": "Szymon Lisowiec",
-	"license": "MIT"
+	"author": {
+		"name": "Szymon Lisowiec",
+		"url": "https://kysune.me"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/SzymonLisowiec/node-CSGODemoReader",
+	"bugs": {
+		"url": "https://github.com/SzymonLisowiec/node-CSGODemoReader/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SzymonLisowiec/node-CSGODemoReader.git"
+	}
 }
