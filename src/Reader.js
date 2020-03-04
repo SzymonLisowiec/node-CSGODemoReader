@@ -63,6 +63,11 @@ class Demo extends EventEmitter {
 		while(this.running){
 
 			let command = this.stream.byte();
+			if (command === undefined){
+				this.running = false;
+				this.emit('end');
+			}
+
 			let tick = this.stream.int32();
 			this.tick = tick;
 			
@@ -128,6 +133,26 @@ class Demo extends EventEmitter {
 
 	getPlayers () {
 		return this.getEntities(EntitiesMap.Player);
+	}
+
+	getGrenades(){
+		return this.getEntities(EntitiesMap.Grenade);
+	}
+	
+	getFlashes(){
+		return this.getEntities(EntitiesMap.Flashbang);
+	}
+	
+	getMolotovs(){
+		return this.getEntities(EntitiesMap.MolotovGrenade);
+	}
+	
+	getHEGrenades(){
+		return this.getEntities(EntitiesMap.HEGrenade);
+	}
+	
+	getSmokeGrenades(){
+		return this.getEntities(EntitiesMap.SmokeGrenade);
 	}
 
 	getRound () {
@@ -623,7 +648,6 @@ class Demo extends EventEmitter {
 			}
 
 			switch(description.name){
-
 				case 'player_connect':
 					let player ={
 						'name': params.name,
@@ -644,12 +668,15 @@ class Demo extends EventEmitter {
 					break;
 
 				case 'round_start':
-					
-					this.match.round++;
+					this.match.round = 1;
+					this.getTeams().forEach(team =>{
+						
+						let team_number = team.getTeamNumber();
 
-					if(this.match.round === 0)
-						this.match.round++;
+						if(team_number)
+							this.match.round += team.getScore();
 
+					});
 					break;
 
 			}

@@ -87,7 +87,7 @@ class Player extends Entity {
 	}
 
 	hasHelmet() {
-		return this.getValue('m_bHasFelmet') == 1;
+		return this.getValue('m_bHasHelmet') == 1;
 	}
 
 	getCurrentEquipmentValue() {
