@@ -1,4 +1,9 @@
 # CS:GO Demo Reader for Node.js
+[![npm version](https://img.shields.io/npm/v/csgodemoreader.svg)](https://npmjs.com/package/csgodemoreader)
+[![npm downloads](https://img.shields.io/npm/dm/csgodemoreader.svg)](https://npmjs.com/package/csgodemoreader)
+[![license](https://img.shields.io/npm/l/csgodemoreader.svg)](https://github.com/SzymonLisowiec/node-CSGODemoReader/blob/master/LICENSE.MD)
+[![paypal](https://img.shields.io/badge/paypal-donate-orange.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=szymonlisowiec%40gmail.com&currency_code=USD&source=url)
+
 A library for reading CS:GO demo files.
 
 ## Note
