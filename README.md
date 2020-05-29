@@ -384,8 +384,6 @@ The Player can be returned while event, which applies to him.
 #### getTeam()
 #### getEyeAngle()
 #### getEyeAngleVector()
-#### getAimLine()
-#### getAimDistanceTo(player)
 #### getAimPunchAngle()
 #### getPosition()
 #### getArmorValue()
@@ -417,3 +415,26 @@ The Team is returned by `Player.getTeam()` and `DemoReader.getTeams()`
 #### getScoreSecondHalf()
 #### getPlayers()
 #### getWeapons()
+
+## Vector3
+### Properties
+#### x
+#### y
+#### z
+### Methods
+#### clone()
+#### add(vector3)
+#### subtract(vector3)
+#### multiply(multiplier)
+#### scale(vector3)
+#### length()
+#### lengthSquared()
+#### normalize()
+#### dot(vector3)
+#### cross(vector3)
+#### distance(vector3)
+
+## MathHelpers
+### Methods
+#### toRadians(n)
+#### makeAnglePositive(angle)
