@@ -64,7 +64,7 @@ class BitStream {
 
     vChunk () {
         let size = this.varInt32();
-        let buffer = new Buffer(size);
+        let buffer = Buffer.alloc(size);
         for (let i = 0; i < size; i++) {
             buffer.writeUInt8(this.byte(), i);
         }
