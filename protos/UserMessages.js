@@ -373,7 +373,8 @@ Messages[UMSG.ServerRankUpdate] = {
                 [2, 'rank_old', 'varInt32'],
                 [3, 'rank_new', 'varInt32'],
                 [4, 'num_wins', 'varInt32'],
-                [5, 'rank_change', 'float']
+                [5, 'rank_change', 'float'],
+				[6, 'rank_type_id', 'varInt32']
             ]
         }
     },
