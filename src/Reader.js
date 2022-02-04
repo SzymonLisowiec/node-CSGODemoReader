@@ -227,7 +227,7 @@ class Demo extends EventEmitter {
 						if(msg){
 
 							msg = msg.decode(message.data);
-							this.emit('umsg.' + message.userMessageType, message);
+							this.emit('umsg.' + message.userMessageType, msg);
 
 						}
 
