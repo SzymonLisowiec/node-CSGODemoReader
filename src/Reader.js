@@ -41,7 +41,8 @@ class Demo extends EventEmitter {
 		this.gameEventDescriptors = [];
 		this.tick = 0;
 	}
-	
+	this.emit('demo_info', demo_header);
+
 	run () {
 
 		this.running = 2;
